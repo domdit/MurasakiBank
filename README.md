@@ -1,7 +1,7 @@
 ### Getting Started With Soseki/Murasaki Bank
 This repository needs to be downloaded with https://github.com/domdit/SosekiBank
 
-####1. Clone Repository
+#### 1. Clone Repository
 - Clone the repository to your local machine. This, and every subsequent step needs to be done for both soseki and murasaki bank repositories. 
 
 ```
@@ -47,7 +47,7 @@ python -m flask run -p 3000
 
 Soseki bank should now be up and running on your local machine
 
-####running tests
+#### running tests
 you can run tests.py in your /SosekiBank/ directory
 
 #### creating database and admin user
@@ -71,15 +71,15 @@ python
 
 #### routes
 *** probably self explanatory
-#####/login
+##### /login
 logs in user
-#####/signup
+##### /signup
 signs up user
-#####/soseki(or /murasaki)
+##### /soseki(or /murasaki)
 main page for bank app, login required, can transfer money internally here, see balance, and view user's transaction log
-#####/soseki(or /murasaki)/admin
+##### /soseki(or /murasaki)/admin
 here you can see all bank accounts and their transactions, balances, and emails. you need admin priveledge to access this page
-#####/sendmoney
+##### /sendmoney
 allows you to send money (externally) to murasaki bank through an api call, login required
-#####/receivemoney
+##### /receivemoney
 the route the gets the api call from the other bank and receives the money adn transfers it into recipient bank, login required
